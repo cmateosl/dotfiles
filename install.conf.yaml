@@ -6,4 +6,5 @@
     - ~/Documents/Workspace
 - link:
     ~/.zshrc: zsh/zshrc.symlink
-    
+- shell:
+  - [bash ./vscode/install.sh, Installing vscode extensions]
