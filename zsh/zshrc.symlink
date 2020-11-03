@@ -1,0 +1,44 @@
+# Shortcut to dotfiles folder
+export ZSH=$HOME/.dotfiles
+
+# Shortcut to projects folder
+export PROJECTS=$HOME/Documents/Workspace
+
+# Load local environment variables
+if [[ -a $HOME/.localrc ]]
+then
+    source $HOME/.localrc
+fi
+
+# Setup zinit
+source "$HOME/.zinit/bin/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+
+# Load plugins
+zinit wait lucid for \
+  atinit'zicompinit; zicdreplay' \
+    zdharma/fast-syntax-highlighting \
+  atload'_zsh_autosuggest_start' \
+    zsh-users/zsh-autosuggestions \
+  blockf atpull'zinit creinstall -q .' \
+    zsh-users/zsh-completions \
+  load lukechilds/zsh-nvm
+
+zinit light cmateosl/skyline
+
+# NVM Configuration
+export NVM_SYMLINK_CURRENT="true" # nvm use should make a symlink
+export NVM_DIR="$HOME/.nvm"
+export NVM_LAZY_LOAD=true
+
+# Load android binaries
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# Alias section
+alias ls='ls -G'
+alias ll='ls -lG'
