@@ -4,6 +4,7 @@
 Lanza los siguientes comandos:
 ```bash
 git clone git@github.com:cmateosl/dotfiles.git ~/.dotfiles
-ln -s ~/.dotfiles/zsh/zshrc.symlink .zshrc 
+cd ~/.dotfiles
+script/bootstrap
 ```
 
