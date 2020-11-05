@@ -7,4 +7,5 @@
 - link:
     ~/.zshrc: zsh/zshrc.symlink
 - shell:
+  - [zsh/install.sh, Installing zsh dependencies]
   - [bash ./vscode/install.sh, Installing vscode extensions]
