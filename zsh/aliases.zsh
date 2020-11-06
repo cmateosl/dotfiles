@@ -1,8 +1,12 @@
 # Reload configuration:
-alias reload!='. ~/.zshrc'
+alias reload!=". ~/.zshrc"
+
+# Shortcut clear
+alias cls='clear'
 
 # Sorts directories in top, colors, and prints `/` at directories:
 alias ls="/usr/local/bin/gls --color -h --group-directories-first -F"
+alias ll="ls -ltrAsh"
 
 # Show local ip:
 alias localip="ipconfig getifaddr en0"
