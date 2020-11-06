@@ -2,6 +2,8 @@
     link:
       relink: true
 - clean: ['~']
+- brewfile:
+    file: Brewfile
 - create:
     - ~/Documents/Workspace
 - link:
