@@ -12,4 +12,4 @@ alias ll="ls -ltrAsh"
 alias localip="ipconfig getifaddr en0"
 
 # Copy public key to clipboard:
-alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+alias pubkey="cat ~/.ssh/id_ed25519.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
