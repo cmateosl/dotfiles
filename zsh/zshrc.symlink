@@ -2,7 +2,7 @@
 export ZSH=$HOME/.dotfiles
 
 # Shortcut to projects folder
-export PROJECTS=$HOME/Documents/Workspace
+export PROJECTS=$HOME/Documents/Workspace/Projects
 
 # Load local environment variables
 if [[ -a $HOME/.localrc ]]
