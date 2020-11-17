@@ -3,7 +3,7 @@
       relink: true
 - clean: ['~']
 - brewfile:
-    file: Brewfile
+    file: homebrew/Brewfile
     no-upgrade: true
 - create:
     - ~/Documents/Workspace
