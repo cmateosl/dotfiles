@@ -4,6 +4,7 @@ set -e
 
 CONFIG="install.conf.yaml"
 DOTBOT_DIR="dotbot"
+DOTBOT_BREWFILE_DIR="dotbot-brewfile"
 
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -11,5 +12,11 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
+
+git -C "${DOTBOT_BREWFILE_DIR}" submodule sync --quiet --recursive
+git submodule update --init --recursive "${DOTBOT_BREWFILE_DIR}"
+if ! [ -x "$(command -v brew)" ]; then
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+fi
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir dotbot-brewfile -c "${CONFIG}" "${@}"
