@@ -6,7 +6,7 @@
     file: homebrew/Brewfile
     no-upgrade: true
 - create:
-    - ~/Documents/Workspace
+    - ~/Documents/Workspace/Projects
 - link:
     ~/.zshrc: zsh/zshrc.symlink
     ~/.hushlogin: zsh/hushlogin.symlink
