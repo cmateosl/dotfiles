@@ -1,4 +1,6 @@
 {
     "workbench.colorTheme": "GitHub Sharp Dark",
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "material-icon-theme",
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+    "editor.formatOnSave": true
 }
