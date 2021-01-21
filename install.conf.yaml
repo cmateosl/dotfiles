@@ -13,6 +13,7 @@
     ~/.gitconfig: git/gitconfig.symlink
 - shell:
   - [zsh/install.sh, Installing zsh dependencies]
+  - [iterm2/install.sh, Adding iterm preferences custom path]
   - [bash ./vscode/install.sh, Installing vscode extensions]
 - link:
     "~/Library/Application Support/Code/User/settings.json":
