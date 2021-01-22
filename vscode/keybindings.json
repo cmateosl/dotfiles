@@ -1,0 +1,12 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "cmd+n",
+        "command": "extension.advancedNewFile",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "alt+cmd+n",
+        "command": "-extension.advancedNewFile"
+    }
+]
