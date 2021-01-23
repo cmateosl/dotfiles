@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Tema.
-code --install-extension joaomoreno.github-sharp-theme
+code --install-extension wesbos.theme-cobalt2
 code --install-extension pkief.material-icon-theme
 
 # Integracion Docker.
