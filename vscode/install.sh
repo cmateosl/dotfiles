@@ -20,7 +20,6 @@ code --install-extension oderwat.indent-rainbow
 
 # Pair programming.
 code --install-extension ms-vsliveshare.vsliveshare
-code --install-extension karigari.chat
 
 # Mejoras del autoformateador y las ayudas.
 code --install-extension esbenp.prettier-vscode
