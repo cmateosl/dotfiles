@@ -1,7 +1,7 @@
 - defaults:
     link:
       relink: true
-- clean: ['~']
+- clean: ["~"]
 - brewfile:
     file: homebrew/Brewfile
     no-upgrade: true
@@ -12,16 +12,16 @@
     ~/.hushlogin: zsh/hushlogin.symlink
     ~/.gitconfig: git/gitconfig.symlink
 - shell:
-  - [zsh/install.sh, Installing zsh dependencies]
-  - [iterm2/install.sh, Adding iterm preferences custom path]
-  - [bash ./vscode/install.sh, Installing vscode extensions]
+    - [zsh/install.sh, Installing zsh dependencies]
+    - [iterm2/install.sh, Adding iterm preferences custom path]
+    - [bash ./vscode/install.sh, Installing vscode extensions]
 - link:
     "~/Library/Application Support/Code/User/settings.json":
       path: vscode/settings.json
       create: true
     "~/Library/Application Support/Code/User/keybindings.json":
-        path: vscode/keybindings.json
-        create: true
+      path: vscode/keybindings.json
+      create: true
     "~/Library/Application Support/Code/User/snippets":
-        path: vscode/snippets
-        create: true
+      path: vscode/snippets
+      create: true
